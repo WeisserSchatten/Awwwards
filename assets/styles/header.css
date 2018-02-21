@@ -65,3 +65,23 @@ header {
 .header-mobile.-is-open .mobile-menu{
 	transform: translateX(0);
 }
+
+.mobile-toggler i:first-child.-animation_first_i {
+	position: absolute;
+	transform: rotate(45deg);
+}
+
+.mobile-toggler i:nth-child(2).-animation_second_i {
+	display: none;
+}
+
+.mobile-toggler i:last-child.-animation_third_i {
+	position: absolute;
+	top: ;
+	transform: rotate(-45deg);
+}
+
+.mobile-toggler.-animation-mobile-toggler{
+	display: flex;
+	align-items: center;
+}
