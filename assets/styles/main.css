@@ -27,8 +27,29 @@ h2.-animated {
 	overflow: hidden;
 }
 
-@media screen and (min-width: 400px) {
+@media screen and (min-width: 450px) {
+	h2 {
+	font-size: 30px;
+	}
 	h1 {
-		font-size: 6rem;
+		font-size: 7rem;
+	};
+}
+
+@media screen and (min-width: 780px) {
+	h2 {
+	font-size: 35px;
+	}
+	h1 {
+		font-size: 10rem;
+	};
+}
+
+@media screen and (min-width: 780px) {
+	h2 {
+	font-size: 40px;
+	}
+	h1 {
+		font-size: 11rem;
 	};
 }
