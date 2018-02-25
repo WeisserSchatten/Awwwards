@@ -27,16 +27,25 @@ h2.-animated {
 	overflow: hidden;
 }
 
-@media screen and (min-width: 450px) {
+@media screen and (min-width: 375px) {
 	h2 {
 	font-size: 30px;
 	}
 	h1 {
-		font-size: 7rem;
+		font-size: 6rem;
 	};
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 500px) {
+	h2 {
+	font-size: 32px;
+	}
+	h1 {
+		font-size: 8rem;
+	};
+}
+
+@media screen and (min-width: 768px) {
 	h2 {
 	font-size: 35px;
 	}
@@ -45,11 +54,51 @@ h2.-animated {
 	};
 }
 
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 1024px) {
 	h2 {
 	font-size: 40px;
 	}
 	h1 {
-		font-size: 11rem;
+		font-size: 12rem;
+	};
+}
+
+@media screen and (min-width: 1024px) {
+	h2 {
+	font-size: 40px;
+	}
+	h1 {
+		font-size: 12rem;
+	};
+}
+
+@media screen and (min-width: 1280px) {
+	h2 {
+	font-size: 42px;
+	}
+	h1 {
+		font-size: 13rem;
+	};
+}
+
+@media screen and (min-width: 1440px) {
+	h2 {
+	font-size: 45px;
+	}
+	h1 {
+		font-size: 14rem;
+	};
+}
+
+@media screen and (min-width: 1600px) {
+	h2 {
+	font-size: 50px;
+	}
+	h1 {
+		font-size: 15rem;
+	};
+
+	a {
+
 	};
 }
