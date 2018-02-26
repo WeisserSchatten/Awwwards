@@ -36,3 +36,8 @@ h2 {
 	font-size: 22px;
 	font-weight: 200;
 }
+
+h1,
+h2{
+	user-select: none;
+}

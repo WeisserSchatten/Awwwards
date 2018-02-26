@@ -8,6 +8,10 @@
 	padding: 0 10px;
 }
 
+.section-main .container {
+	z-index: 2;
+}
+
 h1.-from-above {
 	transform: translateY(-100%);
 	transition: .5s ease-out;
@@ -25,6 +29,24 @@ h2.-animated {
 
 .title, .subtitle{
 	overflow: hidden;
+}
+
+canvas {
+	position: absolute;
+	z-index: 
+  display: block;
+  vertical-align: bottom;
+}
+
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  background-color: #bac6d8;
+  background-image: url("");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 @media screen and (min-width: 375px) {
@@ -60,16 +82,21 @@ h2.-animated {
 	}
 	h1 {
 		font-size: 12rem;
-	};
+	}
+
+	.main-contant{
+		padding-left: 30px;
+	}
 }
 
 @media screen and (min-width: 1024px) {
 	h2 {
 	font-size: 40px;
 	}
+
 	h1 {
 		font-size: 12rem;
-	};
+	}
 }
 
 @media screen and (min-width: 1280px) {
@@ -78,7 +105,7 @@ h2.-animated {
 	}
 	h1 {
 		font-size: 13rem;
-	};
+	}
 }
 
 @media screen and (min-width: 1440px) {
@@ -87,7 +114,7 @@ h2.-animated {
 	}
 	h1 {
 		font-size: 14rem;
-	};
+	}
 }
 
 @media screen and (min-width: 1600px) {
@@ -95,10 +122,6 @@ h2.-animated {
 	font-size: 50px;
 	}
 	h1 {
-		font-size: 15rem;
-	};
-
-	a {
-
-	};
+		font-size: 14rem;
+	}
 }
