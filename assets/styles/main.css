@@ -40,7 +40,6 @@ canvas {
 
 
 #particles-js {
-  position: absolute;
   width: 100%;
   background-color: #bac6d8;
   background-image: url("");
@@ -60,7 +59,7 @@ canvas {
 
 @media screen and (min-width: 500px) {
 	h2 {
-	font-size: 32px;
+	font-size: 25px;
 	}
 	h1 {
 		font-size: 8rem;
@@ -119,7 +118,7 @@ canvas {
 
 @media screen and (min-width: 1600px) {
 	h2 {
-	font-size: 50px;
+	font-size: 45px;
 	}
 	h1 {
 		font-size: 14rem;

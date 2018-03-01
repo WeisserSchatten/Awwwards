@@ -30,9 +30,11 @@ ul {
 
 h1 {
 	font-size: 70px;
+	color: white;
 }
 
 h2 {
+	color: white;
 	font-size: 22px;
 	font-weight: 200;
 }
