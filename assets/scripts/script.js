@@ -5,17 +5,37 @@ $(document).ready(function() {
 		'background-image':'url(./assets/images/bg-' + random + '.jpg)'
 	});
 
+	let modalToggler = $('.js-modal-toggler'),
+		modal = $('.modal'),
+		headerMobile = $('.header-mobile'),
+		modalElems = [
+		'.js-modal-github',
+		'.js-modal-vk',
+		'.js-modal-mail',
+		'.modal-map',
+		'.modal-toggler'
+		];
 
 	$('.mobile-toggler').click(function() {
-		$('.header-mobile').toggleClass('-is-open');
-		$('.mobile-toggler i:first-child').toggleClass('-animation_first_i');
-		$('.mobile-toggler i:nth-child(2)').toggleClass('-animation_second_i')
-		$('.mobile-toggler i:last-child').toggleClass('-animation_third_i');
-		$('.mobile-toggler').toggleClass('-animation-mobile-toggler');
+		headerMobile.toggleClass('-is-open');
 	});
 
 	setTimeout(function() {
 		$('.-from-above').addClass('-animated');
 		$('.-from-bottom').addClass('-animated');
 	}, 1000)
+
+
+
+	modalToggler.click(function() {
+		modal.toggleClass('-active');
+
+		for (let i = 0; i < modalElems.length; i++) {
+			let timeToWait = i * 200;
+
+			setTimeout(function() {
+				$(modalElems[i]).toggleClass('-active');
+			}, 200 + timeToWait);
+		}
+	});
 })
