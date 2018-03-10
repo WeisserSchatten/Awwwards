@@ -12,12 +12,14 @@ $(document).ready(function() {
 		'.js-modal-github',
 		'.js-modal-vk',
 		'.js-modal-mail',
+		'.js-modal-protfolio',
 		'.modal-map',
 		'.modal-toggler'
 		];
 
 	$('.mobile-toggler').click(function() {
 		headerMobile.toggleClass('-is-open');
+		modal.removeClass('-active');
 	});
 
 	setTimeout(function() {
@@ -29,6 +31,8 @@ $(document).ready(function() {
 
 	modalToggler.click(function() {
 		modal.toggleClass('-active');
+		
+		headerMobile.removeClass('-is-open');
 
 		for (let i = 0; i < modalElems.length; i++) {
 			let timeToWait = i * 200;
@@ -36,6 +40,7 @@ $(document).ready(function() {
 			setTimeout(function() {
 				$(modalElems[i]).toggleClass('-active');
 			}, 200 + timeToWait);
+
 		}
 	});
 })

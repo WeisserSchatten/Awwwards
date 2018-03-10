@@ -37,7 +37,7 @@
 .modal-info a img {
 	position: relative;
 	width: 50px;
-	margin: 0 10px;
+	margin: 0 8px;
 }
 
 .modal-toggler {
@@ -86,6 +86,10 @@
 
 .modal-info a.-active {
 	transform: translateY(0);
+}
+
+.mobile-menu.-notActive {
+	display: none;
 }
 
 @media screen and (min-width: 600px) {
