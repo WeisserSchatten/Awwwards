@@ -1,5 +1,9 @@
 $(document).ready(function() {
 	let random = Math.floor(Math.random() * (7 - 1) + 1);
+  	$(".owl-carousel").owlCarousel({
+  		items: 1,
+  		autoHeight: true
+  	});
 
 	$('.section-main').css({
 		'background-image':'url(./assets/images/bg-' + random + '.jpg)'
@@ -31,7 +35,6 @@ $(document).ready(function() {
 
 	modalToggler.click(function() {
 		modal.toggleClass('-active');
-		
 		headerMobile.removeClass('-is-open');
 
 		for (let i = 0; i < modalElems.length; i++) {
@@ -40,7 +43,7 @@ $(document).ready(function() {
 			setTimeout(function() {
 				$(modalElems[i]).toggleClass('-active');
 			}, 200 + timeToWait);
-
 		}
 	});
+
 })

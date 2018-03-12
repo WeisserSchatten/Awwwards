@@ -10,7 +10,10 @@
 	<link rel="stylesheet" type="text/css" href="assets/styles/header.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/main.css">
 	<link rel="stylesheet" type="text/css" href="assets/styles/modal.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/section-portfolio.css">
 	<link rel="stylesheet" type="text/css" href="https://csshake.surge.sh/csshake.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/vender/owl.carousel.min.css">
+	<link rel="stylesheet" type="text/css" href="assets/styles/vender/owl.theme.default.min.css">
 
 
 	<meta name="viewport" content="width=device-width initial-scale=1">
@@ -63,8 +66,6 @@
 				</div>
 			</div>
 		</div>
-	</section>
-
 	<div class="modal">
 		<div class="modal-content">
 			<div class="modal-info">
@@ -77,9 +78,9 @@
 				<a class="js-modal-vk shake">
 					<img src="assets/images/icon-vk.png">
 				</a>
-				<a class="js-modal-protfolio shake">
+				<!-- <a class="js-modal-protfolio shake">
 					<img src="assets/images/icon-protfolio.png">
-				</a>
+				</a> -->
 				<div class="modal-toggler js-modal-toggler"></div>
 			</div>
 			<div class="modal-map">
@@ -87,9 +88,29 @@
 			</div>
 		</div>
 	</div>
-
-
-
+	</section>
+	<section class="section-portfolio">
+		<div class="container">
+			<div class="portfolio">
+				<div class="portfolio-info">
+					<h2 class="portfolio-title">First project</h2>
+					<p class="portfolio-desc">Это мой самый невероятный ,безумный ,фантастический ,одним словом - лучший проект, но это не точно...</p>
+					<button class="portfolio-btn">Подробнее</button>
+				</div>
+				<div class="portfolio-gallery owl-carousel">
+					<div class="gallery-item">
+						<img src="assets/images/slide-1.jpg">
+					</div>
+					<div class="gallery-item">
+						<img src="assets/images/bg-2.jpg">
+					</div>
+					<div class="gallery-item">
+						<img src="assets/images/slide-3.jpg">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 	<script
   src="http://code.jquery.com/jquery-3.3.1.min.js"
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -100,6 +121,7 @@
   <script type="text/javascript" src="assets/scripts/Lib/particles.min.js"></script>
   <script type="text/javascript" src="assets/scripts/hover.js"></script>
   <script type="text/javascript" src="assets/scripts/particle-config.js"></script>
+  <script type="text/javascript" src="assets/scripts/Lib/owl.carousel.min.js"></script>
   <!-- <script type="text/javascript" src="assets/scripts/maps.js"></script> -->
 </body>
 </html>
