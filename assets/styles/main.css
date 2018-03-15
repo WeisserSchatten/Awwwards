@@ -39,6 +39,40 @@ canvas {
   vertical-align: bottom;
 }
 
+.scroll {
+	position: absolute;
+	z-index: 100000;
+	bottom: 50px;
+	left: 50%;
+	transform: translateX(-50%);
+	cursor: pointer;
+}
+
+.scroll p {
+	position: relative;
+	color: white;
+}
+
+.scroll p:before {
+	position: absolute;
+	display: block;
+	left: 50%;
+	bottom: -20px;
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-right: 1px solid white;
+	border-bottom: 1px solid white;
+	transform: rotate(45deg) translateX(-50%);
+}
+
+.scroll p:hover:before {
+	bottom: -30px;
+	transition: .4s;
+	border-right: 3px solid white;
+	border-bottom: 3px solid white;
+}
+
 
 #particles-js {
   width: 100%;
